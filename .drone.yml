@@ -1,7 +1,27 @@
-pipeline:
-  backend:
-    image: golang
-    commands:
-      - go test -v
-      - go install
+---
+kind: pipeline
+name: test-on-amd64
 
+platform:
+  arch: amd64
+
+steps:
+- name: test
+  image: golang
+  commands:
+  - go get
+  - go test
+
+---
+kind: pipeline
+name: test-on-arm64
+
+platform:
+  arch: arm64
+
+steps:
+- name: test
+  image: golang
+  commands:
+  - go get
+  - go test
