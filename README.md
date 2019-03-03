@@ -1,7 +1,7 @@
 
 
-# Color [![GoDoc](https://godoc.org/github.com/ghishadow/color?status.svg)](https://godoc.org/github.com/ghishadow/color) [![Build Status](https://img.shields.io/travis/ghishadow/color.svg?style=flat-square)](https://travis-ci.com/ghishadow/color)
-
+# Color [![GoDoc](https://godoc.org/github.com/ghishadow/color?status.svg)](https://godoc.org/github.com/ghishadow/color)
+[![Build Status](https://cloud.drone.io/api/badges/ghishadow/color/status.svg)](https://cloud.drone.io/ghishadow/color)
 Color lets you use colorized outputs in terms of [ANSI Escape
 Codes](http://en.wikipedia.org/wiki/ANSI_escape_code#Colors) in Go (Golang). It
 has support for Windows too! The API can be used in several ways, pick one that
