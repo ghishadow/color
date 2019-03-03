@@ -1,14 +1,12 @@
 
-
 # Color [![GoDoc](https://godoc.org/github.com/ghishadow/color?status.svg)](https://godoc.org/github.com/ghishadow/color)
+
 [![Build Status](https://cloud.drone.io/api/badges/ghishadow/color/status.svg)](https://cloud.drone.io/ghishadow/color)
 
 Color lets you use colorized outputs in terms of [ANSI Escape
 Codes](http://en.wikipedia.org/wiki/ANSI_escape_code#Colors) in Go (Golang).
 
-
 ![Color](https://i.imgur.com/c1JI0lA.png)
-
 
 ## Install
 
@@ -126,13 +124,13 @@ fmt.Println("All text will now be bold magenta.")
 ```
 
 ### Disable/Enable color
- 
-There might be a case where you want to explicitly disable/enable color output. the 
-`go-isatty` package will automatically disable color output for non-tty output streams 
+
+There might be a case where you want to explicitly disable/enable color output. the
+`go-isatty` package will automatically disable color output for non-tty output streams
 (for example if the output were piped directly to `less`)
 
-`Color` has support to disable/enable colors both globally and for single color 
-definitions. For example suppose you have a CLI app and a `--no-color` bool flag. You 
+`Color` has support to disable/enable colors both globally and for single color
+definitions. For example suppose you have a CLI app and a `--no-color` bool flag. You
 can easily disable the color output with:
 
 ```go
@@ -140,7 +138,7 @@ can easily disable the color output with:
 var flagNoColor = flag.Bool("no-color", false, "Disable color output")
 
 if *flagNoColor {
-	color.NoColor = true // disables colorized output
+    color.NoColor = true // disables colorized output
 }
 ```
 
@@ -163,13 +161,12 @@ c.Println("This prints again cyan...")
 * Save/Return previous values
 * Evaluate fmt.Formatter interface
 
-
 ## Credits
 
- * [Fatih Arslan](https://github.com/fatih)
- * Windows support via @mattn: [colorable](https://github.com/mattn/go-colorable)
+* [Suraj Ghimire](https://github.com/ghishadow)
+* [Fatih Arslan](https://github.com/fatih)
+* Windows support via @mattn: [colorable](https://github.com/mattn/go-colorable)
 
 ## License
 
 The MIT License (MIT) - see [`LICENSE.md`](https://github.com/ghishadow/color/blob/master/LICENSE.md) for more details
-
